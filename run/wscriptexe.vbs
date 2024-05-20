@@ -14,7 +14,7 @@ Function IsProcessRunning(processName)
     IsProcessRunning = False
 End Function
 
-programName = "wscript.exe " & fso.GetParentFolderName(scriptPath) & "\run.vbs"
+programName = "wscript.exe " & fso.GetParentFolderName(WScript.ScriptFullName) & "\run.vbs"
 
 Do
     If Not IsProcessRunning(programName) Then
